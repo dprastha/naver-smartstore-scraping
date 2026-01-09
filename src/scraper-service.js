@@ -99,7 +99,7 @@ class NaverTitaniumScraper {
       }
 
       // Allow security scripts (anti-bot) to settle
-      await this.sleep(5000); 
+      await this.sleep(2_000); 
       await this.simulateHumanWiggle(page);
 
       // ✅ 4. THE MAGIC LINK INJECTION (Organic Tab Forking)
@@ -177,7 +177,7 @@ class NaverTitaniumScraper {
       
       // Wait for hydration (Naver is React/SSR heavy)
       console.log(`✅ Product Page Loaded. Waiting for hydration...`);
-      await this.sleep(5000);
+      await this.sleep(3_000);
 
       return {data: {
         product: this.capturedData.product,
