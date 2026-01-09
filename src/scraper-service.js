@@ -177,7 +177,7 @@ class NaverTitaniumScraper {
       
       // Wait for hydration (Naver is React/SSR heavy)
       console.log(`✅ Product Page Loaded. Waiting for hydration...`);
-      await this.sleep(3_000);
+      await this.sleep(6_000);
 
       return {data: {
         product: this.capturedData.product,
