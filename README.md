@@ -23,7 +23,8 @@ A sophisticated web scraper for Naver SmartStore product pages using Puppeteer w
 
 ---
 
-## 🚀 Setup Instructions
+<details>
+<summary><strong>🚀 Setup Instructions</strong></summary>
 
 ### Prerequisites
 
@@ -86,9 +87,12 @@ this.browser = await puppeteer.launch({
 });
 ```
 
+</details>
+
 ---
 
-## 🧪 Run/Test Instructions
+<details>
+<summary><strong>🧪 Run/Test Instructions</strong></summary>
 
 ### 1. Start the Server
 
@@ -149,6 +153,9 @@ fetch(`http://localhost:3000/naver?productUrl=${encodeURIComponent(productUrl)}`
 }
 ```
 
+![Success get product data](./screenshots/success-get-benefit-product-data.png)
+![Success benefit data](./screenshots/success-get-benefit-product-data.png)
+
 #### Partial Success (206 - Some Data Missing):
 
 ```json
@@ -171,9 +178,12 @@ fetch(`http://localhost:3000/naver?productUrl=${encodeURIComponent(productUrl)}`
 }
 ```
 
+</details>
+
 ---
 
-## 🛡️ Scraper Explanation
+<details>
+<summary><strong>🛡️ Scraper Explanation</strong></summary>
 
 ### How It Works
 
@@ -294,9 +304,12 @@ newPage.on('response', async (response) => {
 });
 ```
 
+</details>
+
 ---
 
-## 📡 API Documentation
+<details>
+<summary><strong>📡 API Documentation</strong></summary>
 
 ### Endpoint: `GET /naver`
 
@@ -373,9 +386,12 @@ response = requests.get(url, params=params)
 print(response.json())
 ```
 
+</details>
+
 ---
 
-## 🔧 Troubleshooting
+<details>
+<summary><strong>🔧 Troubleshooting</strong></summary>
 
 ### Error: "Failed to launch the browser process"
 
@@ -464,9 +480,12 @@ naver-smartstore-scraping/
 └── README.md                  # This file
 ```
 
+</details>
+
 ---
 
-## ⚖️ Legal Notice
+<details>
+<summary><strong>⚖️ Legal Notice</strong></summary>
 
 This scraper is provided for **educational purposes only**. Always check:
 
@@ -477,9 +496,12 @@ This scraper is provided for **educational purposes only**. Always check:
 
 Use responsibly and ethically.
 
+</details>
+
 ---
 
-## 📞 Support
+<details>
+<summary><strong>📞 Support</strong></summary>
 
 For issues or questions:
 
@@ -487,6 +509,8 @@ For issues or questions:
 2. Review console logs for detailed error messages
 3. Verify `.env` configuration matches your proxy provider
 4. Ensure system Chrome is up to date
+
+</details>
 
 ---
 
